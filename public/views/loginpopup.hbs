@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/290209f9-cf0b-4b28-a483-9e57c32530ec_200x200.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Meme Generator</title>
+  <link href='https://fonts.google.com/specimen/Bai+Jamjuree'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel='stylesheet' href='../css/style2.css'>
+
+</head>
+
+<body>
+
+    <div id='logo'>
+        <button id='myBtn'>Popup</button>
+  
+        <img src="images/bg-header-desktop.png">
+</div>
+      <section id='myForm'>
+    
+        <form>
+          <div id='headline'> 
+          <p id='loginp'>Login</p>
+          
+            <i  id='close' class="fa fa-times"></i>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        
+            <div class="form-group content">
+                
+                <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" id='submit' class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+    <script>
+document.getElementById("myBtn").addEventListener("click", function(){
+
+    document.getElementById("#section1").style.zIndex = -1;
+   
+     document.getElementById("myForm").style.display = "block";
+    
+     document.getElementsByTagName("BODY > :not(#myForm)").style.backgroundColor  = '#c5c5c5';
+     document.getElementsByTagName("BODY > :not(#myForm)").style.opacity = 0.99;
+     
+     document.getElementsByTagName("BODY")[0].style.overflow = 'hidden';
+     
+});
+
+document.getElementById("close").addEventListener("click", function(){
+
+document.getElementById("myForm").style.display = "none";
+document.querySelector('body > section:not(#myForm)').style.backgroundColor  = 'white';
+     document.querySelector('body > section:not(#myForm)').style.opacity = 1.0;
+     document.querySelector('body').style.overflow = 'hidden';
+     
+
+});
+
+
+    </script>
+</body>
+
+</html>

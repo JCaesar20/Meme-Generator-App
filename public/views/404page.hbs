@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/290209f9-cf0b-4b28-a483-9e57c32530ec_200x200.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Meme Generator</title>
+  <link href='https://fonts.google.com/specimen/Bai+Jamjuree'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/style2.css'>
+
+</head>
+
+<body>
+
+
+  <section id='section1'>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto ">
+                        <div class="dropdown  show">
+                            <a class="btn  dropdown-toggle text-uppercase font-weight-bold" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{username}}
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/user/me" id='myProfile'>My Profile</a>
+                                <a class="dropdown-item" href="" type='submit' id='logout'>Logout</a>
+                            </div>
+                        </div>
+                       
+                        <li class="nav-item active"><a href="/memes" id='Home' class="nav-link text-uppercase font-weight-bold">Home
+                                <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+  </section>
+
+    
+
+   <section id='notfound'>
+       <div class='container-fluid'>
+        <i id='sadface' class="fas fa-frown-open"></i>
+      <h1>404</h1>
+      <p>Page not found</p>
+      </div>
+   </section>
+
+
+
+  <section id='section6'>
+    <div class='container-fluid'>
+      <div class='row foot'>
+        <div class='col-md-2'>
+          <div>
+            <img id='footimg' src='../images/290209f9-cf0b-4b28-a483-9e57c32530ec_200x200.png'>
+          </div>
+        </div>
+
+        <div class='col-md-2 footgen'>
+          <div>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+
+          </div>
+        </div>
+        <div class='col-md-2 footgen'>
+          <div>
+            <p>Privacy Policy</p>
+            <p>Press Kit</p>
+
+          </div>
+        </div>
+        <div class='col-md-2 footgen'>
+          <div>
+            <p>Install Guide</p>
+
+
+          </div>
+        </div>
+        <div class='col-md-4 footgen'>
+
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="{{FONT_AWESOME}}" crossorigin="anonymous"></script>
+  <script src='../js/index.js'></script>
+</body>
+
+</html>
